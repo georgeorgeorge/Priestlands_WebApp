@@ -1,6 +1,24 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,600);
+* {
+  box-sizing: border-box; }
+
 body,
 html {
   font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0; }
+
+header {
+  display: block;
+  width: 100%;
+  background-color: #4eba6f;
+  color: #2b2b2b;
+  padding: 0 15px 20px; }
+  header .icon {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    margin: 5px 10px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center; }

@@ -2,9 +2,45 @@
 
 $font-stack: 'Raleway', sans-serif;
 
+$red: #f15a5a;
+$yellow: #f0c419;
+$purple: #955ba5;
+$blue: #2d95bf;
+$green: #4eba6f;
+$black: #2b2b2b;
+$grey: #eeeeee;
+$white: #ffffff;
+
+$generalColour: $green;
+$newsColour: $red;
+
+$opacity: 0.9;
+
+* {
+	box-sizing: border-box;
+}
+
 body,
 html {
 	font-family: $font-stack;
 	margin: 0;
 	padding: 0;
+}
+
+header {
+	display: block;
+	width: 100%;
+	background-color: $generalColour;
+	color: $black;
+	padding: 0 15px 20px;
+
+	.icon {
+		display: inline-block;
+		width: 44px;
+		height: 44px;
+		margin: 5px 10px;
+		cursor: pointer;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
 }
