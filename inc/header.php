@@ -17,3 +17,30 @@
 		<span class="button icon reload" data-icon-name="reload"></span>
 		<!-- <span class="button icon filter" data-icon-name="filter"></span> -->
 	</header>
+	
+	<nav class="menu">
+		<a class="[link]">
+			<span class="button icon dash" data-icon-name="dash"></span>
+			<span class="link-title">Dashboard</span>
+		</a>
+		<a class="[link]">
+			<span class="button icon dash" data-icon-name="dash"></span>
+			<span class="link-title">Dashboard</span>
+		</a>
+		<a class="[link]">
+			<span class="button icon dash" data-icon-name="dash"></span>
+			<span class="link-title">Dashboard</span>
+		</a>
+		<a class="[link]">
+			<span class="button icon dash" data-icon-name="dash"></span>
+			<span class="link-title">Dashboard</span>
+		</a>
+		<a class="[link]">
+			<span class="button icon dash" data-icon-name="dash"></span>
+			<span class="link-title">Dashboard</span>
+		</a>
+		<a class="[link]">
+			<span class="button icon dash" data-icon-name="dash"></span>
+			<span class="link-title">Dashboard</span>
+		</a>
+	</nav>

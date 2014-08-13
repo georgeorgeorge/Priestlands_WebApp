@@ -25,10 +25,43 @@ header {
     display: inline-block;
     width: 22px;
     height: 22px;
-    margin: 0px;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center center; }
+    cursor: pointer; }
+
+nav {
+  background-color: #2b2b2b;
+  width: 100%;
+  display: inline-block; }
+  nav a {
+    color: #eeeeee;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    -webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    /* easeInOutQuart */
+    -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    /* easeInOutQuart */ }
+    nav a .icon {
+      display: block;
+      float: left;
+      width: 22px;
+      height: 22px; }
+    nav a .link-title {
+      line-height: 22px;
+      display: block;
+      float: left;
+      margin: 0 10px; }
+    nav a:last-child {
+      border-bottom: none; }
+    nav a:hover {
+      background-color: #eeeeee; }
 
 div.ui-page {
   position: absolute;

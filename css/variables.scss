@@ -13,3 +13,15 @@ $generalColour: $green;
 $newsColour: $red;
 
 $opacity: 0.9;
+
+@mixin transition($style, $time) {
+	-webkit-transition: $style $time cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	   -moz-transition: $style $time cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	     -o-transition: $style $time cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+		 	transition: $style $time cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+	
+	-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	   -moz-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	     -o-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+		 	transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+}

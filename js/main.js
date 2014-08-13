@@ -48,5 +48,17 @@ var svgIconConfig = {
 				} 
 			}
 		]
+	},
+	dash : {
+		url : 'assets/reload.svg',
+		animation : [
+			{ 
+				el : 'path:nth-child(1)', 
+				animProperties : { 
+					from : { val : '{"transform" : "r0 11 11"}' }, 
+					to : { val : '{"transform" : "r360 11 11"}' }
+				} 
+			}
+		]
 	}
 };
