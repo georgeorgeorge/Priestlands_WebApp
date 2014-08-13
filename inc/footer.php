@@ -12,6 +12,7 @@
 		Zepto(function($){
 		  new svgIcon( document.querySelector( 'header .menu' ), svgIconConfig, { easing : mina.elastic, speed: 600 } )
 		  new svgIcon( document.querySelector( 'header .reload' ), svgIconConfig, { easing : mina.elastic, speed: 2400 } )
+		  //new svgIcon( document.querySelector( 'header .filter' ), svgIconConfig, { easing : mina.quart, speed: 300 } )
 		})
 	</script>
 

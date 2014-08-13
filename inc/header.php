@@ -7,7 +7,6 @@
 	<title>Priestlands App</title>
 
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/transition.min.css" />
 </head>
 
 <body>
@@ -16,4 +15,5 @@
 		<span class="button icon menu" data-icon-name="hamburgerCross"></span>
 		<span class="navigation-title">Priestlands</span>
 		<span class="button icon reload" data-icon-name="reload"></span>
+		<!-- <span class="button icon filter" data-icon-name="filter"></span> -->
 	</header>

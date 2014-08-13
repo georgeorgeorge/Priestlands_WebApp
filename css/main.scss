@@ -1,20 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,600);
 
-$font-stack: 'Raleway', sans-serif;
-
-$red: #f15a5a;
-$yellow: #f0c419;
-$purple: #955ba5;
-$blue: #2d95bf;
-$green: #4eba6f;
-$black: #2b2b2b;
-$grey: #eeeeee;
-$white: #ffffff;
-
-$generalColour: $green;
-$newsColour: $red;
-
-$opacity: 0.9;
+@import 'variables';
 
 * {
 	box-sizing: border-box;
@@ -32,15 +18,26 @@ header {
 	width: 100%;
 	background-color: $generalColour;
 	color: $black;
-	padding: 0 15px 20px;
+	padding: 10px;
+	
+	.navigation-title {
+		display: inline-block;
+		text-align: center;
+		margin: 0 16px;
+		min-width: 236px;
+		width: 100%;
+		max-width: calc(100% - 84px);
+	}
 
 	.icon {
 		display: inline-block;
-		width: 44px;
-		height: 44px;
-		margin: 5px 10px;
+		width: 22px;
+		height: 22px;
+		margin: 0px;
 		cursor: pointer;
 		background-repeat: no-repeat;
 		background-position: center center;
 	}
 }
+
+@import 'transition.min';
