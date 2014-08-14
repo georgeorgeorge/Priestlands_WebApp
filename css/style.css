@@ -1,28 +1,49 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,600);
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 body,
 html {
   font-family: "Raleway", sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  position: relative; }
 
 header {
   display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: 9999;
   width: 100%;
   background-color: #4eba6f;
   color: #2b2b2b;
-  padding: 10px; }
+  padding: 35px 15px 15px; }
   header .navigation-title {
-    display: inline-block;
+    display: block;
+    float: left;
     text-align: center;
-    margin: 0 16px;
-    min-width: 236px;
+    margin: 0 15px;
+    min-width: 216px;
+    max-width: calc(100% - 74px);
     width: 100%;
-    max-width: calc(100% - 84px); }
+    font-size: 20px;
+    font-weight: 400;
+    -webkit-transition: opacity 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: opacity 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: opacity 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: opacity 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    /* easeInOutQuart */
+    -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    /* easeInOutQuart */ }
   header .icon {
-    display: inline-block;
+    display: block;
+    float: left;
     width: 22px;
     height: 22px;
     cursor: pointer; }
@@ -30,13 +51,32 @@ header {
 nav {
   background-color: #2b2b2b;
   width: 100%;
-  display: inline-block; }
+  position: absolute;
+  display: inline-block;
+  -webkit-transition: top 600ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: top 600ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: top 600ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: top 600ms cubic-bezier(0.77, 0, 0.175, 1);
+  /* easeInOutQuart */
+  -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  /* easeInOutQuart */ }
+  nav.menu {
+    opacity: 1;
+    top: -500px;
+    visibility: visible; }
+    nav.menu.open {
+      opacity: 1;
+      top: 74px;
+      visibility: visible; }
   nav a {
-    color: #eeeeee;
+    color: white;
     display: block;
     width: 100%;
-    padding: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-bottom: 1px solid #444444;
     overflow: hidden;
     -webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
     -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -55,13 +95,15 @@ nav {
       height: 22px; }
     nav a .link-title {
       line-height: 22px;
+      font-size: 20px;
+      font-weight: 400;
       display: block;
       float: left;
       margin: 0 10px; }
     nav a:last-child {
       border-bottom: none; }
     nav a:hover {
-      background-color: #eeeeee; }
+      background-color: #444444; }
 
 div.ui-page {
   position: absolute;

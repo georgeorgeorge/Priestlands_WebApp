@@ -5,17 +5,8 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/icons.js"></script>
 	<script type="text/javascript" src="js/svgicons.js"></script>
-
-	<script type="text/javascript">
-		Zepto(function($){
-		  new svgIcon( document.querySelector( 'header .menu' ), svgIconConfig, { easing : mina.elastic, speed: 600 } )
-		  new svgIcon( document.querySelector( 'header .reload' ), svgIconConfig, { easing : mina.elastic, speed: 2400 } )
-		  //new svgIcon( document.querySelector( 'header .filter' ), svgIconConfig, { easing : mina.quart, speed: 300 } )
-		  new svgIcon( document.querySelector( 'nav .dash' ), svgIconConfig, { easing : mina.elastic, speed: 300 } )
-		})
-	</script>
-
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

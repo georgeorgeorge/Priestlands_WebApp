@@ -4,6 +4,9 @@
 
 * {
 	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body,
@@ -11,26 +14,35 @@ html {
 	font-family: $font-stack;
 	margin: 0;
 	padding: 0;
+	position: relative;
 }
 
 header {
 	display: block;
+	overflow: hidden;
+	position: relative;
+	z-index: 9999;
 	width: 100%;
 	background-color: $generalColour;
 	color: $black;
-	padding: 10px;
+	padding: 35px 15px 15px;
 	
 	.navigation-title {
-		display: inline-block;
+		display: block;
+		float: left;
 		text-align: center;
-		margin: 0 16px;
-		min-width: 236px;
+		margin: 0 15px;
+		min-width: 216px;
+		max-width: calc(100% - 74px);
 		width: 100%;
-		max-width: calc(100% - 84px);
+		font-size: 20px;
+		font-weight: 400;
+		@include transition(opacity, 300ms);
 	}
 
 	.icon {
-		display: inline-block;
+		display: block;
+		float: left;
 		width: 22px;
 		height: 22px;
 		cursor: pointer;
@@ -40,18 +52,28 @@ header {
 nav {
 	background-color: $black;
 	width: 100%;
+	position: absolute;
 	display: inline-block;
+	@include transition(top, 600ms);
 
 	&.menu {
-		
+		opacity: 1;
+		top: -500px;
+		visibility: visible;
+
+		&.open {
+			opacity: 1;
+			top: 74px;
+			visibility: visible;
+		}
 	}
 	
 	a {
-		color: $grey;
+		color: $white;
 		display: block;
 		width: 100%;
-		padding: 10px;
-		border-bottom: 1px solid rgba(255,255,255,0.1);
+		padding: 15px;
+		border-bottom: 1px solid $darkGrey;
 		overflow: hidden;
 		@include transition(all, 300ms);
 		
@@ -64,6 +86,8 @@ nav {
 		
 		.link-title {
 			line-height: 22px;
+			font-size: 20px;
+			font-weight: 400;
 			display: block;
 			float: left;
 			margin: 0 10px;
@@ -74,7 +98,7 @@ nav {
 		}
 		
 		&:hover {
-			background-color: $grey;
+				background-color: $darkGrey;
 		}
 	}
 }

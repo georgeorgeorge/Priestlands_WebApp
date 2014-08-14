@@ -4,8 +4,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
 <g>
-	<path fill="none" stroke="#010202" stroke-width="2" stroke-linejoin="bevel" d="M0,6h22"/>
-	<path fill="none" stroke="#010202" stroke-width="2" stroke-linejoin="bevel" d="M0,11h22"/>
-	<path fill="none" stroke="#010202" stroke-width="2" stroke-linejoin="bevel" d="M0,16h22"/>
+	<path fill="none" stroke="#2b2b2b" stroke-width="2" stroke-linejoin="bevel" d="M0,6h22"/>
+	<path fill="none" stroke="#2b2b2b" stroke-width="2" stroke-linejoin="bevel" d="M0,11h22"/>
+	<path fill="none" stroke="#2b2b2b" stroke-width="2" stroke-linejoin="bevel" d="M0,16h22"/>
 </g>
 </svg>
